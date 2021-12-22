@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MapActivity">
+
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relMarker">
+
+
+     <fragment
+         android:id="@+id/map"
+         android:name="com.google.android.gms.maps.SupportMapFragment"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         tools:context=".MapActivity"></fragment>
+
+
+
+
+     <com.skyfishjy.library.RippleBackground
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         android:id="@+id/rippleLayout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:visibility="visible"
+         app:rb_color="@color/md_blue_100"
+         app:rb_duration="5000"
+         app:rb_radius="32dp"
+         app:rb_rippleAmount="6"
+         app:rb_scale="6">
+
+         <ImageView
+             android:id="@+id/centerImage"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_centerInParent="true"
+             />
+     </com.skyfishjy.library.RippleBackground>
+
+
+
+     <ImageView
+         android:id="@+id/ivBack"
+         android:layout_width="25dp"
+         android:layout_height="50dp"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="15dp"
+         android:src="@drawable/backred" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relMarker"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/grey"
+            android:foreground="?actionBarItemBackground"
+            android:text="@string/change"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12dp">
+
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/ll_location"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+               android:id="@+id/ivLocation"
+                android:src="@drawable/redlocation" />
+
+            <TextView
+                android:id="@+id/txtCity"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Bhopal"
+                android:textColor="@color/red"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/red"
+            android:foreground="?actionBarItemBackground"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="14sp">
+
+        </Button>
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_location"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:hint="Your address"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

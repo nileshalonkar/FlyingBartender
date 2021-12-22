@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/rlHeader"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgPremium"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/list" />
+        <ImageView
+            android:id="@+id/imgFav"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/fv"
+            />
+
+
+
+        <TextView
+            android:id="@+id/txtListName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPremium"
+            android:layout_marginTop="5dp"
+            android:text="Smirnoff"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtListName"
+            android:text="800KES"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

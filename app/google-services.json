@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "648348754411",
+    "project_id": "flyingbartender-2abfb",
+    "storage_bucket": "flyingbartender-2abfb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648348754411:android:d0f104a815ad79fd1779ae",
+        "android_client_info": {
+          "package_name": "com.maestros.flyingbartender"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648348754411-8n2r9itl61rh5s590o3j0t6630c5ik5b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maestros.flyingbartender",
+            "certificate_hash": "01af8a8cb2e2950edda2d930cdee03b0690bdc85"
+          }
+        },
+        {
+          "client_id": "648348754411-em5ti6bfckdiakj1asd9ij2nmf3a7dnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIc1yJDk2nGp0gSzSaCD4pmZuQeAQuAmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648348754411-em5ti6bfckdiakj1asd9ij2nmf3a7dnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

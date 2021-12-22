@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/rlC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:id="@+id/cardRecommend"
+            android:layout_width="250dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+           >
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rlHeader"
+                android:layout_marginLeft="90dp">
+
+
+
+                <TextView
+                    android:id="@+id/txtCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:text=""
+                   android:textSize="15dp"
+                    android:textColor="@color/black" />
+
+
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCategory"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textColor="@color/black" />
+
+
+
+                <TextView
+                    android:id="@+id/txPriceRecommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCan"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:text="200 KES"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/margin_12dp" />
+
+                <TextView
+                    android:id="@+id/txtCan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtName"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+              <!--  <com.google.android.material.card.MaterialCardView
+                    android:layout_width="35dp"
+                    app:cardElevation="15dp"
+                    android:elevation="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txtCan"
+                    app:cardCornerRadius="25dp"
+                    android:layout_height="35dp">
+
+                    <ImageView
+                        android:id="@+id/imgRight1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_below="@+id/imgPopular"
+                        android:src="@drawable/angle" />
+                </com.google.android.material.card.MaterialCardView>
+-->
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgPlus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_toLeftOf="@+id/imgFav"
+                    android:background="?actionBarItemBackground"
+                    android:padding="8dp"
+                    android:src="@drawable/plus"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/imgFav"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:background="?actionBarItemBackground"
+                    android:padding="8dp"
+                    android:src="@drawable/infav"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imgRecommended"
+        android:layout_width="120dp"
+        android:layout_below="@+id/rlC"
+        android:layout_height="120dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-150dp"
+        android:src="@drawable/blander"
+        />
+
+
+
+</RelativeLayout>
